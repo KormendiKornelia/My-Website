@@ -1,0 +1,290 @@
+<header>
+  <div class="header-container">
+    <h1 *ngIf="language === 'hu'">Körmendi Kornélia</h1>
+    <h4 *ngIf="language === 'hu'"><i>Front-end fejlesztő</i></h4>
+    <h1 *ngIf="language === 'en'">Kornélia Körmendi</h1>
+    <h4 *ngIf="language === 'en'"><i>Front-end Developer</i></h4>
+  </div>
+</header>
+
+<main>
+  <section id="about-me" class="about-me container">
+    <div class="m-2">
+      <p *ngIf="language === 'hu'" class="ms-2">
+        Kreatív emberként mindig is arra törekedtem, hogy új és értékes dolgokat
+        hozzak létre, és ez a szenvedély vezetett a frontend fejlesztés
+        irányába. Precíz és elkötelezett személyiség vagyok, aki örömmel fogadja
+        az új kihívásokat, és folyamatosan keresi a fejlődési lehetőségeket.
+        Jártas vagyok modern webes technológiák, mint például HTML5, CSS3,
+        JavaScript és Angular használatában, és különösen fontos számomra, hogy
+        a felhasználói élményt szem előtt tartva hozzak létre reszponzív,
+        esztétikus weboldalakat.
+      </p>
+      <p *ngIf="language === 'hu'" class="ms-2">
+        Célom, hogy egy olyan csapat tagja legyek, ahol a kreativitásomat és
+        szakmai tudásomat egy támogató közegben kamatoztathatom.
+      </p>
+      <p *ngIf="language === 'hu'" class="ms-2">
+        Szabadidőmben szívesen olvasok, és angolul tanulok.
+      </p>
+      <p *ngIf="language === 'en'" class="ms-2">
+        As a creative person, I have always strived to create new and valuable
+        things, and this passion led me to front-end development. I am a precise
+        and dedicated individual who welcomes new challenges and continuously
+        seeks opportunities for growth. I am proficient in modern web
+        technologies such as HTML5, CSS3, JavaScript, and Angular, and I find it
+        especially important to create responsive and aesthetically pleasing
+        websites with a focus on user experience.
+      </p>
+      <p *ngIf="language === 'en'" class="ms-2">
+        My goal is to be part of a team where I can utilize my creativity and
+        professional knowledge in a supportive environment.
+      </p>
+      <p *ngIf="language === 'en'" class="ms-2">
+        In my free time, I enjoy reading and learning English.
+      </p>
+    </div>
+
+    <div>
+      <img
+        class="m-2 mb-4"
+        src="assets\kornelia-headshot.jpg"
+        alt="Körmendi Kornélia portré"
+        style="max-height: 300px; width: auto; object-fit: cover"
+      />
+    </div>
+  </section>
+  <section id="studies" class="my-studies">
+    <div class="container my-studies-container">
+      <h3 *ngIf="language === 'hu'" class="m-2">Tanulmányok:</h3>
+
+      <ul *ngIf="language === 'hu'">
+        <li class="mb-2">
+          <strong>2024.05. - 2024.12. PROGmasters</strong> – Front-end képzés
+        </li>
+        <li class="mb-2">
+          <strong
+            >2018 - 2020 Szegedi Tudományegyetem Juhász Gyula Pedagógusképző
+            Kar</strong
+          >
+          - Televíziós műsorkészítő
+        </li>
+        <li class="mb-2">
+          <strong>2013 – 2017 Ivan Saric Műszaki Iskola, Szabadka</strong> -
+          Közúti közlekedési technikus
+        </li>
+      </ul>
+      <h3 *ngIf="language === 'en'" class="m-2">Education:</h3>
+      <ul *ngIf="language === 'en'">
+        <li class="mb-2">
+          <strong>2024.05. - 2024.12. PROGmasters</strong> – Front-end Training
+        </li>
+        <li class="mb-2">
+          <strong
+            >2018 - 2020 University of Szeged, Juhász Gyula Faculty of
+            Education</strong
+          >
+          - Television Program Production
+        </li>
+        <li class="mb-2">
+          <strong>2013 – 2017 Ivan Saric Technical School, Subotica</strong> -
+          Road Transport Technician
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="skills" class="skills container">
+    <h3 *ngIf="language === 'hu'" class="m-2 mb-4">Technikai ismeretek:</h3>
+    <h3 *ngIf="language === 'en'" class="m-2 mb-4">Technical Skills:</h3>
+    <div class="skills-container">
+      <div class="m-2">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SCSS</li>
+          <li>BOOTSTRAP</li>
+          <li>SEO</li>
+          <li>JAVASCRIPT</li>
+          <li>TYPESCRIPT</li>
+          <li>ANGULAR</li>
+          <li>REACT</li>
+          <li>FIREBASE</li>
+          <li>CLEAN CODE</li>
+          <li>SCRUM</li>
+        </ul>
+        <p></p>
+      </div>
+      <div>
+        <img
+          src="assets\computer.jpg"
+          alt="Illusztráció"
+          style="max-height: 350px; max-width: 300px; object-fit: cover"
+          class="m-2 mb-4"
+        />
+      </div>
+    </div>
+  </section>
+  <section id="works" class="my-works">
+    <div class="container">
+      <h3 *ngIf="language === 'hu'" class="m-2 pt-3">Munkáim:</h3>
+      <h3 *ngIf="language === 'en'" class="m-2 pt-3">My Work:</h3>
+      <div class="myworks-container">
+        <div class="card m-4" style="width: 300px; min-height: 520px">
+          <div class="card-background">
+            <img
+              src="assets\logo-sotetkekes.png"
+              class="card-img-top"
+              alt="Tappancs kutyakozmetika logója"
+            />
+          </div>
+          <div class="card-body text-center">
+            <h5 *ngIf="language === 'hu'" class="card-title">
+              Tappancs kutyakozmetika
+            </h5>
+
+            <p *ngIf="language === 'hu'" class="card-text">
+              Ez egy Angular alapú webalkalmazás, amely lehetővé teszi a
+              kutyakozmetika és az ott dolgozók megismerését, értékelését és az
+              időpontok foglalását.
+            </p>
+            <a
+              *ngIf="language === 'hu'"
+              href="https://kutyakozmetika-k-kornelia.web.app/"
+              target="_blank"
+              class="btn"
+              >Megnézem</a
+            >
+            <h5 *ngIf="language === 'en'" class="card-title">
+              Tappancs Dog Grooming
+            </h5>
+            <p *ngIf="language === 'en'" class="card-text">
+              This is an Angular-based web application that allows users to get
+              to know the dog grooming service, rate it, and book appointments.
+            </p>
+            <a
+              *ngIf="language === 'en'"
+              href="https://kutyakozmetika-k-kornelia.web.app/"
+              target="_blank"
+              class="btn"
+              >View</a
+            >
+          </div>
+        </div>
+        <div class="card m-4" style="width: 300px; min-height: 520px">
+          <div class="github-background">
+            <p><i class="fa-brands fa-github"></i></p>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">GitHub</h5>
+            <p *ngIf="language === 'hu'" class="card-text">A munkáim kódjai.</p>
+            <a
+              *ngIf="language === 'hu'"
+              href="https://github.com/KormendiKornelia"
+              target="_blank"
+              class="btn"
+              >Megnézem</a
+            >
+
+            <p *ngIf="language === 'en'" class="card-text">My project codes.</p>
+            <a
+              *ngIf="language === 'en'"
+              href="https://github.com/KormendiKornelia"
+              target="_blank"
+              class="btn"
+              >View</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience" class="container experience">
+    <h3 *ngIf="language === 'hu'" class="m-2 mb-1">Tapasztalat:</h3>
+    <div *ngIf="language === 'hu'" class="m-2 ms-3">
+      <p>
+        <strong>2024.05. - 2024.12. PROGmasters</strong>
+        <i> - Front-end fejlesztő</i>
+      </p>
+      <ul>
+        <li>Agilis, projekt alapú szoftverfejlesztés 3-4 fős csapatban</li>
+        <li>
+          Használt technológiák: HTML, CSS, SCSS, BOOTSTRAP, SEO, JAVASCRIPT,
+          TYPESCRIPT, ANGULAR, REACT, VUE, FIREBASE,CLEAN CODE, SCRUM
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="language === 'hu'" class="m-2 ms-3">
+      <p>
+        <strong>2021 – jelenleg. Provident Pénzügyi Zrt.</strong>
+        <i> - Hitelelbírálat ellenőrzési ügyintéző </i>
+      </p>
+      <ul>
+        <li>Hitelbírálat ellenőrzési feladatok ellátása</li>
+        <li>Számítógépes adatfeldolgozás</li>
+        <li>Dokumentumok ellenőrzése és feldolgozása</li>
+        <li>A társosztályok és a kereskedelmi terület munkájának támogatása</li>
+        <li>
+          A Vállalat üzleti szabályzatának való megfelelés biztosítása és
+          betartatása
+        </li>
+      </ul>
+    </div>
+    <h3 *ngIf="language === 'en'" class="m-2 mb-1">Experience:</h3>
+    <div *ngIf="language === 'en'" class="m-2 ms-3">
+      <p>
+        <strong>2024.05. - 2024.12. PROGmasters</strong>
+        <i> - Front-end Developer</i>
+      </p>
+      <ul>
+        <li>Agile, project-based software development in 3-4 person teams</li>
+        <li>
+          Technologies used: HTML, CSS, SCSS, BOOTSTRAP, SEO, JAVASCRIPT,
+          TYPESCRIPT, ANGULAR, REACT, VUE, FIREBASE, CLEAN CODE, SCRUM
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="language === 'en'" class="m-2 ms-3">
+      <p>
+        <strong>2021 – Present. Provident Financial Ltd.</strong>
+        <i> - Credit Evaluation and Verification Specialist</i>
+      </p>
+      <ul>
+        <li>Performing credit evaluation tasks</li>
+        <li>Processing computer-based data</li>
+        <li>Reviewing and handling documents</li>
+        <li>
+          Supporting the work of partner departments and the commercial sector
+        </li>
+        <li>Ensuring compliance with the company's business regulations</li>
+      </ul>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container contact-container">
+      <h3 *ngIf="language === 'hu'" class="m-2">Kapcsolat:</h3>
+      <h3 *ngIf="language === 'en'" class="m-2">Contact:</h3>
+      <ul class="ms-2">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/korn%C3%A9lia-k%C3%B6rmendi-9b0578337/"
+            target="_blank"
+          >
+            LinkedIn</a
+          >
+        </li>
+
+        <li>
+          <a href="https://github.com/KormendiKornelia" target="_blank">
+            GitHub</a
+          >
+        </li>
+        <li>
+          <a href="mailto:kornelia.kormendi@gmail.com"
+            >kornelia.kormendi&#64;gmail.com</a
+          >
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>

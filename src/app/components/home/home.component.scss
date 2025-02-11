@@ -1,0 +1,114 @@
+header {
+  height: 500px;
+  background: rgb(95, 143, 183);
+  background: linear-gradient(
+    124deg,
+    rgba(95, 143, 183, 1) 0%,
+    rgba(175, 198, 216, 1) 25%,
+    rgba(232, 225, 217, 1) 50%,
+    rgba(217, 188, 184, 1) 75%,
+    rgba(195, 172, 180, 1) 100%
+  );
+}
+header {
+  padding-top: 56px;
+}
+section {
+  min-height: 500px;
+}
+.btn {
+  background-color: rgba(95, 143, 183, 1);
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(175, 198, 216);
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-studies {
+  background-color: rgba(232, 225, 217, 1);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.my-studies-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.my-works {
+  background-color: rgba(217, 188, 184, 1);
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.myworks-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-background {
+  animation: backgroundAnimation 10s linear infinite;
+}
+.github-background p {
+  font-size: 200px;
+  text-align: center;
+}
+.experience {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(175, 198, 216, 1);
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: rgb(207, 154, 147);
+  }
+  50% {
+    background-color: rgb(155, 213, 206);
+  }
+  100% {
+    background-color: rgb(207, 154, 147);
+  }
+}
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+  }
+  .skills {
+    flex-direction: column;
+  }
+  .skills img {
+    width: 250px;
+  }
+}

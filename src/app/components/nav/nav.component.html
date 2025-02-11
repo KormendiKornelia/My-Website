@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container">
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li *ngIf="language === 'hu'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('about-me')"
+            >Bemutatkozás</a
+          >
+        </li>
+        <li *ngIf="language === 'hu'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('studies')"
+            >Tanulmányok</a
+          >
+        </li>
+        <li *ngIf="language === 'hu'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('skills')">Ismeretek</a>
+        </li>
+        <li *ngIf="language === 'hu'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('works')">Munkáim</a>
+        </li>
+        <li *ngIf="language === 'hu'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('experience')"
+            >Tapasztalat</a
+          >
+        </li>
+        <li *ngIf="language === 'hu'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('contact')">Kapcsolat</a>
+        </li>
+        <li *ngIf="language === 'en'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('about-me')">About Me</a>
+        </li>
+        <li *ngIf="language === 'en'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('studies')">Education</a>
+        </li>
+        <li *ngIf="language === 'en'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('skills')">Skills</a>
+        </li>
+        <li *ngIf="language === 'en'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('works')">My Work</a>
+        </li>
+        <li *ngIf="language === 'en'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('experience')"
+            >Experience</a
+          >
+        </li>
+        <li *ngIf="language === 'en'" class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('contact')">Contact</a>
+        </li>
+      </ul>
+      <label class="language-toggle">
+        <input
+          type="checkbox"
+          (change)="toggleLanguage()"
+          [checked]="language === 'en'"
+        />
+        <span class="toggle-text">
+          <span [class.active]="language === 'hu'">HU</span> /
+          <span [class.active]="language === 'en'">EN</span>
+        </span>
+      </label>
+    </div>
+  </div>
+</nav>

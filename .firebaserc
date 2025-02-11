@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "kornelia-kormendi"
+  },
+  "targets": {
+    "kornelia-kormendi": {
+      "hosting": {
+        "uj-hosting-nev": [
+          "dist/my-website/browser"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
